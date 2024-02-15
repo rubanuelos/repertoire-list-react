@@ -1,13 +1,178 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: monospace;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.add-form {
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 100px;
+  border: 1px solid steelblue;
+  padding: 30px;
+  border-radius: 5px;
 }
+
+html {
+  background-color: rgb(203 213 225);
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial'
+}
+
+/* .add-form {
+  margin: 40px;
+} */
+
+.btn {
+  display: inline-block;
+  background: #000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+  width: 100%;
+}
+
+.piece {
+  background: #a55e5e;
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.piece h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-control label {
+  display: block;
+  text-align: center;
+}
+
+.form-control input, select {
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+  padding: 3px 7px;
+  font-size: 17px;
+  cursor: help;
+}
+
+footer {
+  display: grid;
+  text-align: center;
+  bottom: 0;
+  justify-self: center;
+  position: absolute;
+  width: 100%;
+  height: 2.5rem;
+}
+
+/* Navbar styling */
+
+/* .active{
+    background-color: lightcoral;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+nav .title {
+    font-size: 1.5rem;
+    margin: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+   list-style: none; 
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+}
+
+nav ul li a:not(.active):hover {
+    background-color:#172554 ;
+}
+
+nav .menu {
+    display: none;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+}
+
+nav .menu span {
+    height: 0.4rem;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0.2rem;
+}
+
+@media (max-width: 480px) {
+    nav .menu {
+        display: flex;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+    }
+
+    nav ul.open {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        margin: 0.2rem 0.5rem;
+    }
+} */
